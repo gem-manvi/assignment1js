@@ -1,10 +1,42 @@
-body {
-    background-color: #808080;
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
+
+body{
+
+    background-image: linear-gradient(rgb(241, 115, 115), grey);
+    height: 150vh;
+    overflow: hidden;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 50vw;
+    padding: 2rem 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #771414;
+    border-bottom: 0.1rem solid #771414;
+}
+
+.mydata{
+    
+    width: 90%;
+    display: flex;
+    margin: 3rem auto;
+
 }
 
 .myTable {
     padding: 0;
-    margin: auto;
     border-collapse: collapse;
     width: 100%;
     height: 100%;
@@ -14,15 +46,22 @@ body {
 }
 
 .myTableHeaderRow {
-    color: #00ffc8;
+    color: #771414;
     font-weight: bold;
-    height: 50px;
-    font-size: larger;
+    height: 60px;
+    
+    font-size: 1.5rem;
 }
 
-.myTableBodyRow:nth-child(odd) {
-    background-color: #FFFF00;
+th, td{
+    border: 0.1rem solid black;
+    height: 40px;
+    
 }
-.myTableBodyRow:nth-child(even) {
-    background-color: #0077ff;
+
+td{
+    color: rgba(234, 242, 250, 0.959);
+    font-size: 1.2rem;
+    height: 45px;
+
 }
