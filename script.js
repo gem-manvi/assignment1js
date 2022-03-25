@@ -1,12 +1,6 @@
 const divData = document.querySelector("div.mydata");
 
-let tableHeaders = [
-    "Name",
-    "Age",
-    "DOB",
-    "Email",
-    "Company"
-];
+let tableHeaders = ["Name","Age","DOB","Email","Company"];
 
 let tableData = [
     ["Manvi Tyagi", "20", "13-apr-2001", "manvi.tyagi@gmail.com", "Gemini Solutions"],
@@ -59,7 +53,7 @@ let tableData = [
         let td5 = document.createElement('td');
         let myCompany = document.createTextNode(tableData[i][4]);
         td5.appendChild(myCompany);
-        myTableBodyRow.append(td1, td2, td2, td3, td4, td5);
+        myTableBodyRow.append(td1, td2, td3, td4, td5);
         myTableBody.append(myTableBodyRow);
 
     }
